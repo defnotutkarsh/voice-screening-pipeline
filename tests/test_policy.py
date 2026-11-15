@@ -1,6 +1,6 @@
 import pytest
 
-from resume_screener.policy import (apply_policy, choose_honorific,
+from voice_screening.policy import (apply_policy, choose_honorific,
                                     sanitize_value, spoken_experience)
 
 from conftest import canned_facts

@@ -12,7 +12,7 @@ from .store import ResultsStore
 
 
 def create_app(store: ResultsStore, secret: str | None = None) -> FastAPI:
-    app = FastAPI(title="resume-screener results")
+    app = FastAPI(title="voice-screening results")
 
     @app.post("/post-call")
     async def post_call(request: Request):

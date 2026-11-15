@@ -5,9 +5,9 @@ import json
 import pytest
 from fastapi.testclient import TestClient
 
-from resume_screener.retry import decide_retry
-from resume_screener.server import create_app
-from resume_screener.store import ResultsStore, safe_id
+from voice_screening.retry import decide_retry
+from voice_screening.server import create_app
+from voice_screening.store import ResultsStore, safe_id
 
 from conftest import ROOT
 

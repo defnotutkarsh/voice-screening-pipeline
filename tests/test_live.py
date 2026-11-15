@@ -11,8 +11,8 @@ from datetime import date
 
 import pytest
 
-from resume_screener.extract import build_prompt
-from resume_screener.llm import extractor_from_env
+from voice_screening.extract import build_prompt
+from voice_screening.llm import extractor_from_env
 
 from conftest import FIXTURES, canned_facts
 

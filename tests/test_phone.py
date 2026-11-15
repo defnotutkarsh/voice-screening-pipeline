@@ -1,6 +1,6 @@
 import pytest
 
-from resume_screener.phone import normalize_phone
+from voice_screening.phone import normalize_phone
 
 
 @pytest.mark.parametrize("raw, expected", [

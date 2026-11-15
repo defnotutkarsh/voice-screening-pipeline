@@ -1,4 +1,4 @@
-"""Command line entry point:  resume-screener <command> ...
+"""Command line entry point:  voice-screening <command> ...
 
     build      resume PDFs -> campaign CSV + roster CSV
     validate   check a campaign CSV before uploading it to a dialler
@@ -95,7 +95,7 @@ def cmd_make_pdf(args):
 
 def main(argv=None):
     load_dotenv()
-    ap = argparse.ArgumentParser(prog="resume-screener", description=__doc__,
+    ap = argparse.ArgumentParser(prog="voice-screening", description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="command", required=True)
 

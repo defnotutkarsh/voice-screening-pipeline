@@ -1,6 +1,6 @@
 import pytest
 
-from resume_screener.validate import check, template_columns
+from voice_screening.validate import check, template_columns
 
 
 def _csv(tmp_path, text):

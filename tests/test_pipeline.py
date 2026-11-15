@@ -5,9 +5,9 @@ import shutil
 
 import pytest
 
-from resume_screener.build import CAMPAIGN_COLUMNS, run_build
-from resume_screener.testpdf import text_to_pdf
-from resume_screener.validate import check
+from voice_screening.build import CAMPAIGN_COLUMNS, run_build
+from voice_screening.testpdf import text_to_pdf
+from voice_screening.validate import check
 
 from conftest import FIXTURES, ROOT
 

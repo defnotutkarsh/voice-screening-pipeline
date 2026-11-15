@@ -1,6 +1,6 @@
 from datetime import date
 
-from resume_screener.extract import RESPONSE_SCHEMA, build_prompt, cache_key
+from voice_screening.extract import RESPONSE_SCHEMA, build_prompt, cache_key
 
 
 def test_prompt_carries_todays_date(job):

@@ -1,4 +1,4 @@
-# resume-screener
+# voice-screening-pipeline
 
 The data plumbing around an AI phone-screening agent.
 
@@ -28,7 +28,7 @@ flowchart LR
 Needs Python 3.10+ and poppler (`apt install poppler-utils` or `brew install poppler`).
 
 ```bash
-git clone https://github.com/defnotutkarsh/resume-screener && cd resume-screener
+git clone https://github.com/defnotutkarsh/voice-screening-pipeline && cd voice-screening-pipeline
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 pytest            # everything runs offline, on made-up resumes
@@ -39,19 +39,19 @@ Then try the pipeline on the made-up resumes in `tests/fixtures/`:
 ```bash
 mkdir -p resumes
 for f in tests/fixtures/resumes/*.txt; do
-  resume-screener make-pdf "$f" "resumes/$(basename "${f%.txt}").pdf"
+  voice-screening make-pdf "$f" "resumes/$(basename "${f%.txt}").pdf"
 done
 
 cp .env.example .env                 # add your GEMINI_API_KEY
-resume-screener build --job examples/job.example.json --text-only   # free: no API calls
-resume-screener build --job examples/job.example.json
-resume-screener validate --prompts examples/prompts
+voice-screening build --job examples/job.example.json --text-only   # free: no API calls
+voice-screening build --job examples/job.example.json
+voice-screening validate --prompts examples/prompts
 ```
 
 And the results side:
 
 ```bash
-resume-screener serve --job examples/job.example.json
+voice-screening serve --job examples/job.example.json
 # in another terminal:
 curl -X POST localhost:8086/post-call -H 'content-type: application/json' \
      -d @examples/webhook_payload.example.json
@@ -76,7 +76,7 @@ Each of these is here because the simpler version went wrong on real calls.
 
 **The model extracts facts. Python decides policy.** The model is never told who
 is eligible; it only records what the resume says. Every flag is computed in
-[`policy.py`](src/resume_screener/policy.py). Change the job's rules and you
+[`policy.py`](src/voice_screening/policy.py). Change the job's rules and you
 re-run the policy over cached facts. You never re-parse and never pay twice, and
 a rule can be read and tested like any other code.
 
@@ -108,7 +108,7 @@ checks the CSV against what the agent will actually say.
 
 **A call that did not happen is not a rejection.** Voicemail, a relative
 answering, "call me tomorrow" and "not interested" are four different endings,
-and only the last is final. [`retry.py`](src/resume_screener/retry.py) holds
+and only the last is final. [`retry.py`](src/voice_screening/retry.py) holds
 that decision. Unknown outcome words are retried, not dropped.
 
 **Rebuild, never append.** Webhook senders retry, so the same call can arrive
@@ -132,7 +132,7 @@ truncated here, and the agent's prompt must quote them as data
 ## Connecting a voice platform
 
 The results side reads one normalised record per call
-([`adapters/base.py`](src/resume_screener/adapters/base.py)). The built-in
+([`adapters/base.py`](src/voice_screening/adapters/base.py)). The built-in
 adapter accepts a plain JSON webhook like
 [`examples/webhook_payload.example.json`](examples/webhook_payload.example.json):
 
@@ -164,7 +164,7 @@ function and pass it to `ResultsStore(adapter=...)`. Nothing else changes.
   roster flagged `unreadable` and is left out of the dial file.
 - **No dialler and no voice agent.** This is the pipeline around them.
 - **Phone numbers are Indian mobiles only.** It is one function in
-  [`phone.py`](src/resume_screener/phone.py).
+  [`phone.py`](src/voice_screening/phone.py).
 - **The live-model tests need a key.** `pytest -m live` runs the real model
   against the fixture resumes; without `GEMINI_API_KEY` they are skipped.
 
