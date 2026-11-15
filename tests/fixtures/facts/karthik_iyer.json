@@ -1,0 +1,11 @@
+{
+ "candidate_name": "Karthik Iyer", "candidate_name_spoken": "कार्तिक",
+ "phone_raw": "0091-9000000103", "email": "karthik.iyer@example.com",
+ "city": "RS Puram, Coimbatore", "gender": "male", "gender_basis": "name", "in_region": "false",
+ "highest_qualification": "B.Tech", "stream": "Computer Science", "grad_year": "2023",
+ "is_graduate": "true", "degree_in_progress": "false", "is_technical_degree": "true",
+ "experience_months": 38, "current_role": "Associate Software Engineer",
+ "probe_topic": "On call production rotation",
+ "probe_line": "Was part of the on call rotation for production issues",
+ "extraction_notes": ""
+}

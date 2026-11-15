@@ -1,0 +1,25 @@
+{
+  "run_id": "demo-0001",
+  "call_time": "2026-11-15T10:42:00+05:30",
+  "duration_seconds": 312,
+  "disposition": "completed",
+  "transcript": "agent: Hello, am I speaking with Ananya?\ncandidate: Yes, speaking.\n(...)",
+  "initial_context": {
+    "phone_number": "+919000000101",
+    "candidate_name": "Ananya Kulkarni",
+    "resume_qualification": "Bachelor of Commerce",
+    "resume_stream": "Commerce",
+    "resume_experience": "3 years"
+  },
+  "gathered_context": {
+    "call_outcome": "completed",
+    "recommend": "shortlist",
+    "clarity_score": 2,
+    "listening_score": 2,
+    "problem_solving_score": 1,
+    "empathy_score": 2,
+    "language_fluency_band": "fluent",
+    "knockout_pass": "true",
+    "recommend_reason": "Explained the billing-software training clearly and with detail."
+  }
+}

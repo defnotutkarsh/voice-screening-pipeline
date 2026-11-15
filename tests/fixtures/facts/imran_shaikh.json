@@ -1,0 +1,11 @@
+{
+ "candidate_name": "Imran Shaikh", "candidate_name_spoken": "इमरान",
+ "phone_raw": "+91 80000 00104", "email": "imran.shaikh@example.com",
+ "city": "Hadapsar, Pune", "gender": "male", "gender_basis": "name", "in_region": "true",
+ "highest_qualification": "B.A.", "stream": "Arts", "grad_year": "",
+ "is_graduate": "false", "degree_in_progress": "true", "is_technical_degree": "false",
+ "experience_months": 58, "current_role": "Field Sales Executive",
+ "probe_topic": "Monthly activation target",
+ "probe_line": "Achieve monthly target of 20 activations, been top performer twice",
+ "extraction_notes": "Profile claims 3 years of experience but the dated roles add up to more."
+}

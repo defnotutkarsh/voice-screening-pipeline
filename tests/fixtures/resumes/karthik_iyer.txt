@@ -1,0 +1,18 @@
+KARTHIK IYER
+Mobile: 0091-9000000103
+Email karthik.iyer@example.com
+Address: RS Puram, Coimbatore, Tamil Nadu 641002
+
+EDUCATION
+B.Tech Computer Science, Nilgiri Institute of Technology, Coimbatore, 2023, CGPA 7.8
+
+EXPERIENCE
+Associate Software Engineer, Brightpath Systems, Coimbatore
+July 2023 - Aug 2026
+- Worked on backend APIs in Java Spring Boot for an insurance client
+- Wrote unit tests and participated in code reviews
+- Was part of the on call rotation for production issues
+
+SKILLS
+Java, Spring Boot, SQL, Git
+Languages: Tamil, Hindi, English

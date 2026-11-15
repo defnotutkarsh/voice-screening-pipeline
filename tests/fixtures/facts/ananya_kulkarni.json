@@ -1,0 +1,11 @@
+{
+ "candidate_name": "Ananya Kulkarni", "candidate_name_spoken": "अनन्या",
+ "phone_raw": "090000 00101", "email": "ananya.kulkarni@example.com",
+ "city": "Kothrud, Pune", "gender": "female", "gender_basis": "name", "in_region": "true",
+ "highest_qualification": "Bachelor of Commerce", "stream": "Commerce", "grad_year": "2023",
+ "is_graduate": "true", "degree_in_progress": "false", "is_technical_degree": "false",
+ "experience_months": 36, "current_role": "Customer Relationship Executive",
+ "probe_topic": "Training staff on billing software",
+ "probe_line": "Trained 6 new floor staff on the billing software when the store moved to a new POS",
+ "extraction_notes": ""
+}

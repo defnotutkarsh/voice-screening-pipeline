@@ -1,0 +1,12 @@
+{
+ "candidate_name": "Rhea Fernandes", "candidate_name_spoken": "रिया",
+ "phone_raw": "7000000102", "email": "rhea.fernandes@example.com",
+ "city": "Nigdi Pradhikaran, Pimpri-Chinchwad", "gender": "female", "gender_basis": "name",
+ "in_region": "true",
+ "highest_qualification": "BBA", "stream": "Marketing", "grad_year": "2027",
+ "is_graduate": "false", "degree_in_progress": "true", "is_technical_degree": "false",
+ "experience_months": 3, "current_role": "Marketing Intern",
+ "probe_topic": "Stockist feedback calls",
+ "probe_line": "Called up 50 stockists to collect feedback on the new packaging and made a summary deck",
+ "extraction_notes": "Degree not completed: final year with one paper pending."
+}

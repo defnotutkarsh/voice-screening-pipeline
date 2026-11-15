@@ -1,0 +1,27 @@
+{
+  "job_id": "kestrel-support-pune-2026",
+  "company": "Kestrel Freight (a made-up company)",
+  "role_title": "Customer Support Associate",
+
+  "what_the_job_is": "Phone and chat support for small businesses that ship parcels with the company. The person answers questions about delayed or damaged shipments, explains billing, and follows up with the warehouse until the issue is closed. Most customers are shop owners who are not technical, so clear, patient explanation matters more than product knowledge.",
+
+  "region": {
+    "name": "the Pune metropolitan area",
+    "covers": "Pune city, Pimpri-Chinchwad, Hinjewadi, Wakad, Hadapsar, Kharadi and the towns adjoining them"
+  },
+
+  "spoken_name_script": "Devanagari",
+
+  "policy": {
+    "flag_technical_degree": false
+  },
+
+  "probe_relevance": "Prefer whatever the candidate did that is closest to this job: explaining something to customers, resolving complaints, following up between teams, or keeping records in a spreadsheet. Prefer paid work over college work, and recent over old.",
+
+  "results": {
+    "score_parts": ["clarity_score", "listening_score", "problem_solving_score", "empathy_score"],
+    "score_part_max": 2,
+    "min_scored_duration_seconds": 60,
+    "rubric_columns": ["language_fluency_band", "knockout_pass", "knockout_fail_reason", "recommend_reason"]
+  }
+}

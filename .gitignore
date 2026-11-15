@@ -1,0 +1,27 @@
+# --- private data: must never be committed ---
+# Real resumes and everything derived from them stay on your machine.
+/resumes/
+/out/
+*.pdf
+*.csv
+!examples/*.csv
+.env
+.env.*
+!.env.example
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# --- editors / OS ---
+.idea/
+.vscode/
+.DS_Store
+*.bak*
+.~lock.*
